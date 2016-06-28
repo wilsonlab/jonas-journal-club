@@ -1,0 +1,3 @@
+[submodule "build/reveal.js"]
+	path = build/reveal.js
+	url = https://github.com/hakimel/reveal.js

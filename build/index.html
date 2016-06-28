@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="../slides.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="could-a-neuroscientist-understand-a-microprocessor" class="slide level1">
+<h1>Could a neuroscientist understand a microprocessor</h1>
+<p><br></p>
+<ul>
+<li>Eric Jonas and Konrad Kording</li>
+<li>Wilson Lab Journal Club - June 28, 2016</li>
+</ul>
+</section>
+<section id="modeling-complex-phenomena---warmup" class="slide level1">
+<h1>Modeling Complex phenomena - warmup</h1>
+<video width="640" height="640" controls>
+<source src="../ct.webm" type="video/webm"/>
+</video>
+<p><sup><a href="http://wikipedia.org/wiki/Rope">Wikipedia</a></sup></p>
+</section>
+<section id="atari-as-a-systems-neuroscience-model" class="slide level1">
+<h1>Atari As A Systems Neuroscience Model</h1>
+<figure>
+<img src="../jonas-figs/1.svg" />
+</figure>
+<ul>
+<li>Three 'organisms'</li>
+<li>Three 'behaviors' (games running, no player movement)</li>
+</ul>
+</section>
+<section id="atari-cns-ground-truth" class="slide level1">
+<h1>Atari CNS Ground Truth</h1>
+<figure>
+<img src="../jonas-figs/2.svg" />
+</figure>
+<ol type="a">
+<li>Circuit-level description</li>
+<li>Module-level abstraction (e.g. a 1-bit adder)</li>
+<li>The boolean logic abstraction</li>
+<li>Transistor circuit</li>
+<li>Physical instanciation of a logic gate</li>
+<li>Transistor I/V curves</li>
+</ol>
+</section>
+<section id="lesion-studies" class="slide level1">
+<h1>Lesion studies</h1>
+<figure>
+<img src="../jonas-figs/4.svg" />
+</figure>
+<ul>
+<li>A subset of behavior-specific transistors</li>
+<li>Some transistors participate in multiple behaviors</li>
+</ul>
+</section>
+<section id="transistor-raster-plots" class="slide level1">
+<h1>Transistor raster plots</h1>
+<figure>
+<img src="../jonas-figs/5.svg" />
+</figure>
+<ul>
+<li>Activity of 10 Donkey Kong specific transistors during Donkey Kong run</li>
+</ul>
+</section>
+<section id="trastistor-pixel-tuning-curves" class="slide level1">
+<h1>Trastistor-pixel tuning curves</h1>
+<figure>
+<img src="../jonas-figs/6.svg" />
+</figure>
+</section>
+<section id="pairwise-transistor-transistor-correlations" class="slide level1">
+<h1>Pairwise transistor-transistor correlations</h1>
+<figure>
+<img src="../jonas-figs/7.svg" />
+</figure>
+<ul>
+<li>Average pairwise correlation very low</li>
+<li>But significantly more multi-unit coordination than expected from average pairwise correlation</li>
+</ul>
+</section>
+<section id="a" class="slide level1">
+<h1>a</h1>
+<figure>
+<img src="../jonas-figs/8.png" />
+</figure>
+</section>
+<section id="a-1" class="slide level1">
+<h1>a</h1>
+<figure>
+<img src="../jonas-figs/9.svg" />
+</figure>
+</section>
+<section id="a-2" class="slide level1">
+<h1>a</h1>
+<figure>
+<img src="../jonas-figs/10.svg" />
+</figure>
+</section>
+<section id="a-3" class="slide level1">
+<h1>a</h1>
+<figure>
+<img src="../jonas-figs/11.svg" />
+</figure>
+</section>
+<section id="a-4" class="slide level1">
+<h1>a</h1>
+<figure>
+<img src="../jonas-figs/12.svg" />
+</figure>
+</section>
+<section id="a-5" class="slide level1">
+<h1>a</h1>
+<figure>
+<img src="../jonas-figs/13.svg" />
+</figure>
+</section>
+<section id="place-cells" class="slide level1">
+<h1>Place Cells</h1>
+<p><br/></p>
+<figure>
+<img src="../talkFigs/decodeExample2.png" />
+</figure>
+<ul>
+<li><p>Single cells become active at one track location</p></li>
+<li><p>Many cells' activity can be combined to estimate rat's position<sup><a href="http://jn.physiology.org/content/79/2/1017.short">6</a>,<a href="http://www.sciencedirect.com/science/article/pii/S0896627309005820">7</a></sup></p></li>
+</ul>
+</section>
+<section id="theta-sequences" class="slide level1">
+<h1>Theta Sequences</h1>
+<div style="width:80%;margin:auto;">
+<figure>
+<img src="../talkFigs/thetaSequencesRaster2.png" title="A raster plot of four place cells, for about 500 milliseconds. The cells are sorted vertically by preferred location on the track. At fine timescales, they can be seen to fire in fast sequences that reflect the ordering of their preferred locations. In the background is a position reconstruction in the same time interval, showing the same information: that the ensemble sweeps ahead of the rat in his direction of running. There is one such sweep per theta cycle." />
+</figure>
+</div>
+<ul>
+<li>Place cells fire in quick sequences reflecting place field order</li>
+</ul>
+</section>
+<section id="theta-sequences-1" class="slide level1">
+<h1>Theta Sequences</h1>
+<div style="width:80%;margin:auto;">
+<figure>
+<img src="../talkFigs/thetaSequencesRaster3.png" title="A raster plot of four place cells, for about 500 milliseconds. The cells are sorted vertically by preferred location on the track. At fine timescales, they can be seen to fire in fast sequences that reflect the ordering of their preferred locations. In the background is a position reconstruction in the same time interval, showing the same information: that the ensemble sweeps ahead of the rat in his direction of running. There is one such sweep per theta cycle." />
+</figure>
+</div>
+<ul>
+<li>Place cells fire in quick sequences reflecting place field order</li>
+</ul>
+</section>
+<section id="theta-sequences-2" class="slide level1" data-background="../rawArt/black.png">
+<h1>Theta Sequences</h1>
+<video width="480" height="480" controls>
+<source src="../movies/sequences.ogg" type="video/ogg"/>
+</video>
+</section>
+<section id="local-theta-desynchronization" class="slide level1">
+<h1>Local Theta Desynchronization</h1>
+<div class="leftHalf">
+<figure>
+<img src="../talkFigs/brainAndWaves.png" title="A figure of a brain with three recording sites all in hippocampus, but progressively more lateral and posterior. Beside, three local field potential traces showing the theta rhythm. More lateral/posterior tetrodes have a graded time delay." />
+</figure>
+</div>
+<div class="leftHalf">
+<p><br/><br/></p>
+<ul>
+<li>Within hippocampus, theta is desynchronized<sup><a href="http://www.nature.com/nature/journal/v459/n7246/full/nature08010.html">9</a></sup></li>
+<li>Field potential is increasingly delayed more laterally</li>
+</ul>
+</div>
+</section>
+<section id="theta-is-a-traveling-wave" class="slide level1">
+<h1>Theta is a Traveling Wave</h1>
+<video width="640" height="480" controls>
+<source src="../movies/thanos1.ogg" type="video/ogg"/>
+<p>A high-speed animation of several cycles theta in the local field potentials of 32 tetrodes organized in an array along the hippocampus. Theta can be seen as a traveling wave here, with a peak that begins at the most medial tetrodes and sweeps laterally.</p>
+</video>
+</section>
+<section class="slide level1">
+
+</section>
+    </div>
+  </div>
+
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+    </body>
+</html>
